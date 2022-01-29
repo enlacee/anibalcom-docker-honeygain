@@ -1,0 +1,15 @@
+# docker run honeygain/honeygain -tou-accept -email honeygain@pprios.com -pass clavefacil#123 -device anibalthinkpad64
+
+version: "3"
+services:
+    honeygain:
+        # image: honeygain/honeygain:0.6.6
+        build:
+          context: .
+          dockerfile: Dockerfile
+          args:
+            # tou-accept: tou-get
+            email: honeygain@pprios.com
+            pass: xxxxxxxxxx
+            device: anibalpc1
+
